@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Facturación</title>
+</head>
+<body>
+    <h2>Formulario de Facturación en Línea</h2>
+
+    <form action="recibo.php" method="GET">
+        <label for="desea_recibir_factura">Desea recibir factura</label>
+        <input type="checkbox" name="desea_recibir_factura" value="Sí"> <br><br>
+
+        <label for="genero_hombre">Hombre</label>
+        <input type="radio" id="genero_hombre" name="genero" value="Hombre">
+        <label for="genero_mujer">Mujer</label>
+        <input type="radio" id="genero_mujer" name="genero" value="Mujer"><br><br>
+
+        <label for="nombre">Nombre</label>  
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+
+        <label for="correo">Correo Electrónico</label>  
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="envio">Forma de Envío de la Factura</label>
+        <select id="envio" name="envio" required>
+            <option value="Normal">Normal</option>
+            <option value="Urgente">Urgente</option>
+            <option value="Avion">Avión</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
